@@ -87,7 +87,7 @@ class _MainScreenState extends State<MainScreen> {
                         audioPlayer.stop();
                       } else {
                         try {
-                          await audioPlayer.setUrl("url Path....");
+                          await audioPlayer.setAsset(items[index].audioPath);
 
                           audioPlayer.play();
 
